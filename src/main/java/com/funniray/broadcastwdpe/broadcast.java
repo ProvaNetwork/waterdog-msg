@@ -17,8 +17,9 @@
 
 package com.funniray.waterdogmsg;
 
-import com.funniray.waterdogmsg.commands.MsgCommand;
-import com.funniray.waterdogmsg.commands.ReplyCommand;
+import com.funniray.broadcastwdpe.commands.BroadcastCommand;
+import com.funniray.broadcastwdpe.commands.StaffChatCommand;
+import com.funniray.broadcastwdpe.commands.VipChatCommand;
 import dev.waterdog.waterdogpe.plugin.Plugin;
 import dev.waterdog.waterdogpe.utils.config.Configuration;
 
@@ -56,14 +57,9 @@ public class wdmsg extends Plugin {
 
         config = getConfig();
 
-        if (getConfig().getBoolean("showpiracywarning")) {
-            this.getLogger().critical("A WaterDogPE plugin that allows proxy PMing\n" +
-                    "A free plugin by Funniray. https://github.com/funniray/waterdog-pureperms If you paid for this plugin, you were scammed.\n" +
-                    "Report resellers to beingscammed@reallyisnt.fun");
-        }
-
-        getProxy().getCommandMap().registerCommand(new MsgCommand());
-        getProxy().getCommandMap().registerCommand(new ReplyCommand());
+        getProxy().getCommandMap().registerCommand(new BroadastCommand());
+        getProxy().getCommandMap().registerCommand(new StaffChatCommand());
+        getProxy().getCommandMap().registerCommand(new VipChatCommand());
     }
 
 }
