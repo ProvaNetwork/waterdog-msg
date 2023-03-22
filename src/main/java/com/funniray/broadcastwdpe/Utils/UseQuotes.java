@@ -15,7 +15,7 @@
  *    I am available for any questions/requests: funniray10@gmail.com
  */
 
-package com.funniray.waterdogmsg.utils;
+package com.funniray.broadcastwdpe.utils;
 
 import java.util.ArrayList;
 import java.util.List;
