@@ -15,7 +15,7 @@
  *    I am available for any questions/requests: funniray10@gmail.com
  */
 
-package com.funniray.waterdogmsg;
+package com.funniray.broadcastwdpe;
 
 import com.funniray.broadcastwdpe.commands.BroadcastCommand;
 import com.funniray.broadcastwdpe.commands.StaffChatCommand;
